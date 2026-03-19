@@ -1,2 +1,184 @@
 # Embaixada-do-Nepal-no-Brasil
 Redesigned prototype of the official website of the Embassy of Nepal in Brazil, focusing on improved user experience (UX), clearer navigation, and better access to consular services.
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embassy of Nepal in Brazil</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  background: #b22222;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 50px;
+  margin-right: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* NAVBAR */
+nav {
+  background: #003893;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  background: #e6e6e6;
+  padding: 60px 30px;
+}
+
+.hero h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+/* SECTION */
+.section {
+  padding: 40px 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  border-bottom: 3px solid #b22222;
+  padding-bottom: 10px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #003893;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg">
+  <h1>Embassy of Nepal in Brazil</h1>
+</header>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#mission">Mission</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>Official Website of the Embassy of Nepal in Brazil</h2>
+  <p>Providing consular services and strengthening Nepal–Brazil relations.</p>
+</section>
+
+<div class="section" id="services">
+  <h2>Consular Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Visa Application</h3>
+      <p>Information and requirements for visas.</p>
+    </div>
+    <div class="card">
+      <h3>Passport Services</h3>
+      <p>Support for Nepali citizens abroad.</p>
+    </div>
+    <div class="card">
+      <h3>Authentication</h3>
+      <p>Official document verification.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="mission">
+  <h2>Diplomatic Mission</h2>
+  <p>The Embassy works to strengthen political, economic, and cultural relations between Nepal and Brazil.</p>
+</div>
+
+<div class="section" id="news">
+  <h2>Latest News</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Embassy Event</h3>
+      <p>Cultural event promoting Nepal in Brazil.</p>
+    </div>
+    <div class="card">
+      <h3>Diplomatic Meeting</h3>
+      <p>Meeting between officials of Nepal and Brazil.</p>
+    </div>
+    <div class="card">
+      <h3>Public Notice</h3>
+      <p>Updates on consular services.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="contact">
+  <h2>Contact</h2>
+  <p><strong>Ambassador:</strong> Nirmal Raj Kafle</p>
+  <p>Email: info@nepalembassy.gov.np</p>
+  <p>Location: Brasília, Brazil</p>
+</div>
+
+<footer>
+  <p>© 2026 Embassy of Nepal in Brazil</p>
+</footer>
+
+</body>
+</html>
