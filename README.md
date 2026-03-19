@@ -1,5 +1,3 @@
-# Embaixada-do-Nepal-no-Brasil
-Redesigned prototype of the official website of the Embassy of Nepal in Brazil, focusing on improved user experience (UX), clearer navigation, and better access to consular services.
 <!DOCTYPE html>
 
 <html lang="en">
@@ -11,66 +9,73 @@ Redesigned prototype of the official website of the Embassy of Nepal in Brazil, 
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f8;
   color: #222;
 }
 
 /* HEADER */
 header {
-  background: #b22222;
+  background: linear-gradient(90deg, #b22222, #8b0000);
   color: white;
-  padding: 15px 30px;
+  padding: 20px;
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 
 header img {
-  width: 50px;
-  margin-right: 15px;
+  width: 60px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 20px;
+  font-size: 22px;
 }
 
-/* NAVBAR */
+/* NAV */
 nav {
   background: #003893;
-  padding: 10px 30px;
+  padding: 12px;
+  text-align: center;
   position: sticky;
   top: 0;
 }
 
 nav a {
   color: white;
-  margin-right: 20px;
+  margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* HERO */
 .hero {
-  background: #e6e6e6;
-  padding: 60px 30px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/1/12/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg') center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
 }
 
 .hero h2 {
-  margin-top: 0;
-  font-size: 32px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-/* SECTION */
+/* CONTAINER */
 .section {
-  padding: 40px 30px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
+  padding: 40px 20px;
 }
 
-.section h2 {
-  border-bottom: 3px solid #b22222;
-  padding-bottom: 10px;
+/* CARDS */
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 /* GRID */
@@ -80,11 +85,16 @@ nav a {
   gap: 20px;
 }
 
-/* CARD */
-.card {
-  background: white;
+/* NEWS CARD */
+.news-card {
+  background: #fff;
   padding: 20px;
-  border: 1px solid #ddd;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
 }
 
 /* BUTTON */
@@ -94,6 +104,7 @@ nav a {
   background: #003893;
   color: white;
   text-decoration: none;
+  border-radius: 6px;
   margin-top: 10px;
 }
 
@@ -103,7 +114,6 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
-  margin-top: 40px;
 }
 </style>
 
@@ -112,7 +122,7 @@ footer {
 <body>
 
 <header>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg">
+  <img src="https://media.tenor.com/7cX2K7kQzJIAAAAd/nepal-flag.gif">
   <h1>Embassy of Nepal in Brazil</h1>
 </header>
 
@@ -124,56 +134,60 @@ footer {
 </nav>
 
 <section class="hero">
-  <h2>Official Website of the Embassy of Nepal in Brazil</h2>
-  <p>Providing consular services and strengthening Nepal–Brazil relations.</p>
+  <h2>Welcome to the Embassy of Nepal</h2>
+  <p>Promoting Nepal–Brazil relations</p>
 </section>
 
-<div class="section" id="services">
-  <h2>Consular Services</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Visa Application</h3>
-      <p>Information and requirements for visas.</p>
-    </div>
-    <div class="card">
-      <h3>Passport Services</h3>
-      <p>Support for Nepali citizens abroad.</p>
-    </div>
-    <div class="card">
-      <h3>Authentication</h3>
-      <p>Official document verification.</p>
+<div class="section">
+
+  <div class="card" id="services">
+    <h2>Consular Services</h2>
+    <div class="grid">
+      <div class="news-card">
+        <h3>Visa</h3>
+        <p>Apply for travel authorization.</p>
+      </div>
+      <div class="news-card">
+        <h3>Passport</h3>
+        <p>Support for Nepali citizens.</p>
+      </div>
+      <div class="news-card">
+        <h3>Authentication</h3>
+        <p>Legal document services.</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="section" id="mission">
-  <h2>Diplomatic Mission</h2>
-  <p>The Embassy works to strengthen political, economic, and cultural relations between Nepal and Brazil.</p>
-</div>
+  <div class="card" id="mission">
+    <h2>Diplomatic Mission</h2>
+    <p>The Embassy promotes cooperation, diplomacy, and cultural exchange between Nepal and Brazil.</p>
+  </div>
 
-<div class="section" id="news">
-  <h2>Latest News</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Embassy Event</h3>
-      <p>Cultural event promoting Nepal in Brazil.</p>
-    </div>
-    <div class="card">
-      <h3>Diplomatic Meeting</h3>
-      <p>Meeting between officials of Nepal and Brazil.</p>
-    </div>
-    <div class="card">
-      <h3>Public Notice</h3>
-      <p>Updates on consular services.</p>
+  <div class="card" id="news">
+    <h2>Latest News</h2>
+    <div class="grid">
+      <div class="news-card">
+        <h3>Embassy Event</h3>
+        <p>Cultural event in Brasília.</p>
+      </div>
+      <div class="news-card">
+        <h3>Meeting</h3>
+        <p>Diplomatic meeting with Brazilian officials.</p>
+      </div>
+      <div class="news-card">
+        <h3>Notice</h3>
+        <p>Updates on consular services.</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="section" id="contact">
-  <h2>Contact</h2>
-  <p><strong>Ambassador:</strong> Nirmal Raj Kafle</p>
-  <p>Email: info@nepalembassy.gov.np</p>
-  <p>Location: Brasília, Brazil</p>
+  <div class="card" id="contact">
+    <h2>Contact</h2>
+    <p><strong>Ambassador:</strong> Nirmal Raj Kafle</p>
+    <p>Email: info@nepalembassy.gov.np</p>
+    <p>Brasília, Brazil</p>
+  </div>
+
 </div>
 
 <footer>
